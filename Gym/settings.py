@@ -100,15 +100,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': "HIDED",
+        'NAME': "dghghf84qfa16",
 
-        'USER': 'HIDED',
+        'USER': 'xbkyroflypbfah',
 
-        'PASSWORD': 'HIDED',
+        'PASSWORD': 'ead2217dcf0501e8908f50bf337afb84230c8e6db5dba1605b11073c6158f4f4',
 
-        'HOST': 'HIDED',
+        'HOST': 'ec2-54-228-95-1.eu-west-1.compute.amazonaws.com',
 
-        'PORT': 'HIDED'
+        'PORT': '5432'
     }
 }
 
