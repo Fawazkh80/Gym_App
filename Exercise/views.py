@@ -31,7 +31,7 @@ def CreateWeights(request):
     'sets' : request.data['sets'],
     'weight' : request.data['weight'],
     'volume' : volume,
-    'category':category
+    'category':request.data['category']
     })
 
 
