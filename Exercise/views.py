@@ -22,6 +22,7 @@ def CreateWeights(request):
     # latestWeight = User.objects.get(username=request.user).weight.all().order_by('created_at').first()
     # latestSerializer = serializers.WeightSerializer(latestWeight, many=False)
     volume = request.data['weight'] * request.data['reps'] * request.data['sets']
+ 
 
     serializer = serializers.WeightSerializer(data={    
     'exe_user':request.user.id,
@@ -31,7 +32,8 @@ def CreateWeights(request):
     'sets' : request.data['sets'],
     'weight' : request.data['weight'],
     'volume' : volume,
-    'category':request.data['category']
+    'category':request.data['category'],
+    'note':request.data['note']
     })
 
 
@@ -261,3 +263,10 @@ def DeleteCalories(request,id):
     'succses' : 'weights information was deleted'
   }
   return Response(data)
+
+
+
+
+
+
+
